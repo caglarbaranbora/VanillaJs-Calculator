@@ -4,7 +4,9 @@ body {
   align-items: center;
   height: 100vh;
   background-color: lightblue;
+  margin: 0;
 }
+
 .calculator {
   display: flex;
   flex-direction: column;
@@ -51,4 +53,29 @@ button {
 .clear {
   background: #dc3545;
   color: white;
+}
+
+@media (max-device-width: 468px) {
+  .calculator {
+    gap: 8px;
+  }
+  input {
+    font-size: 1.5em;
+    height: 50px;
+  }
+
+  .container {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .equal {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 }
